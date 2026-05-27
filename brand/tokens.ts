@@ -1,0 +1,45 @@
+/** Leadgear design tokens — source of truth for the automation dashboard. */
+export const brand = {
+  colors: {
+    primary: '#F15A29',
+    primaryDark: '#D14B20',
+    primaryLight: '#F69476',
+    primarySubtle: '#FDF1ED',
+    headerWarm: '#FFF5F2',
+    powder: '#FFFFFF',
+    smoke: '#F6F5F3',
+    mist: '#EDECE9',
+    steel: '#838384',
+    iron: '#5A6870',
+    slate: '#213343',
+    oil: '#231F20',
+    success: '#10B981',
+    warning: '#F59E0B',
+    error: '#EF4444',
+    info: '#3B82F6',
+    background: '#FFFFFF',
+    foreground: '#111827',
+    surface: '#F9FAFB',
+    surfaceRaised: '#FFFFFF',
+    border: '#E5E7EB',
+    borderStrong: '#D1D5DB',
+    textPrimary: '#111827',
+    textSecondary: '#6B7280',
+    textMuted: '#9CA3AF',
+    textInverse: '#FFFFFF',
+  },
+  fonts: {
+    display: "'Plus Jakarta Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    body: "'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    mono: "'JetBrains Mono', ui-monospace, monospace",
+  },
+  radius: 8,
+  modalRadius: 16,
+  shadow: {
+    card: '0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06)',
+    raised: '0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)',
+    modal: '0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04)',
+  },
+} as const;
+
+export type BrandColor = keyof typeof brand.colors;
